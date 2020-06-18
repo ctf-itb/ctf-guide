@@ -2,12 +2,10 @@
 
 This is a guide on how to start CTF, covering the basics on how to solve the problems, also where to go and what to learn from this point.
 
----
 
 ## Table of Contents
 *TBD*
 
----
 
 ## WTF is CTF?
 
@@ -25,7 +23,6 @@ CTFGUIDE{th1s_1s_4_fl4g}
 Now try to find a flag hidden in this page.
 <!--- You can't see me! The flag is CTFGUIDE{gr4tz_y0u_f0unD_m3} -->
 
----
 
 ## Subcategories in CTF
 
@@ -39,7 +36,6 @@ Challenges given in a CTF competition usually fall into these main 6 categories:
 
 Each subcategory will be explained in more detail in their own page.
 
----
 
 ## What's Next
 
