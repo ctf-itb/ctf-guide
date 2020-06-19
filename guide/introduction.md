@@ -36,7 +36,7 @@ Challenges given in a CTF competition usually fall into these main 6 categories:
 
 Each subcategory will be explained in more detail in their own pages.
 
-### Writeups
+## Writeups
 
 Writeups are step-by-step documentations made by contestants on how to solve certain problems. They are written after the competitions. There are tons of writeups of different sorts of problems on the Internet. These can be your guidelines on solving a similar challenges in a competition.
 
