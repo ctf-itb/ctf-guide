@@ -34,12 +34,15 @@ Challenges given in a CTF competition usually fall into these main 6 categories:
 - Cryptography
 - Miscellaneous
 
-Each subcategory will be explained in more detail in their own page.
+Each subcategory will be explained in more detail in their own pages.
 
+### Writeups
+
+Writeups are step-by-step documentations made by contestants on how to solve certain problems. They are written after the competitions. There are tons of writeups of different sorts of problems on the Internet. These can be your guidelines on solving a similar challenges in a competition.
 
 ## What's Next
 
-Most competitions require experience, and what better way to earn some other than joining the competitions themselves. But joining a competition right away might be too hard. This guide and some other [resources](#External-Resources) may help. CTF competitions are regularly posted in [CTFTime](https://ctftime.org/). We encourage you to try joining these competitions.
+Most competitions require experience, and what better way to earn some other than joining the competitions themselves. But joining a competition right away might be too hard. This guide and some other [resources](#External-Resources) may help. CTF competitions are regularly posted in [CTFTime](https://ctftime.org/). After every CTF competitions, people usually post their writeups too. We encourage you to try joining these competitions and reading other people's writeups.
 
 ---
 
