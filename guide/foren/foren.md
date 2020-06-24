@@ -33,12 +33,14 @@ Then you can use a NIM finder and search `Steve Bezalel`. You will get the NIM `
 Steganography can consist of a payload and a passphrase and one of the tools that use this concept is steghide. Run steghide for `flag.jpg` with passphrase `13518018`, then you will get the flag.
 
 Command:
+
 `steghide extract -p 13518018 -sf flag.jpg -xf flag.txt; cat flag.txt`
 
 Output:
+
 `
-wrote extracted data to "flag.txt".
-CTFGUIDE{th1s_1s_f0r3ns1cks}
+	wrote extracted data to "flag.txt".
+	CTFGUIDE{th1s_1s_f0r3ns1cks}
 `
 
 ## External Resources
