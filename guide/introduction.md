@@ -23,8 +23,7 @@ CTFGUIDE{th1s_1s_4_fl4g}
 Now try to find a flag hidden in this page.
 <!--- You can't see me! The flag is CTFGUIDE{gr4tz_y0u_f0unD_m3} -->
 
-
-## Subcategories in CTF
+### Subcategories in CTF
 
 Challenges given in a CTF competition usually fall into these main 6 categories:
 - Web Exploitation
@@ -36,9 +35,13 @@ Challenges given in a CTF competition usually fall into these main 6 categories:
 
 Each subcategory will be explained in more detail in their own pages.
 
-## Writeups
+### Writeups
 
 Writeups are step-by-step documentations made by contestants on how to solve certain problems. They are written after the competitions. There are tons of writeups of different sorts of problems on the Internet. These can be your guidelines on solving a similar challenges in a competition.
+
+### Environment Setup
+
+Before you start doing CTFs, it is **highly recommended** to learn and use UNIX-based OS, e.g. [ubuntu](https://ubuntu.com/) or even [kali linux](https://www.kali.org/). This is because most challenges require some kind of tools which might not be compatible in other systems. Moreover, learning and using these systems will be useful in other circumstances. You can use a virtualized environment e.g. [VirtualBox](https://www.virtualbox.org/), or install the OS native on your computer if you prefer.
 
 ## What's Next
 
