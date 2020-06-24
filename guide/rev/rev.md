@@ -104,7 +104,7 @@ Launch IDA, load the program, and disassemble the main function (F5).
   return 0;
 }
 ```
-Here, we can easily see that our input (s2) will be compared to `verygood`, which is the password.
+Here, we can easily see that our input `s2` will be compared to `verygood`, which is the password.
 
 We can also directly see the flag.
 ```
