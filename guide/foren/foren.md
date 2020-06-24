@@ -25,7 +25,7 @@ The file is indeed a jpg image and there is no error. So we can conclude this is
 ### Figuring out the passphrase
 From the challenge description, we need to guess the NIM of the person in the picture. So we know that the NIM is the passphrase. You can search the picture in google and you will find:
 
-[Image](example/googlesearch.jpg)
+![Image](example/googlesearch.jpg)
 
 Then you can use a NIM finder and search `Steve Bezalel`. You will get the NIM `13518018`.
 
