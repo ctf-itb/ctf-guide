@@ -3,7 +3,7 @@ Reverse Engineering (RE) problems in CTF are usually designed in such a way whic
 
 ## Tools
 The tools you might need to solve RE problems:
-- Debugger ([gdb](http://www.gdbtutorial.com/tutorial/how-install-gdb)) - to RE compiled programs.
+- Debugger ([gdb](http://www.gdbtutorial.com/tutorial/how-install-gdb), [gdb-peda](https://github.com/longld/peda)) - to RE compiled programs.
 - Disassembler ([IDA](https://www.hex-rays.com/products/ida/), [Ghidra](https://ghidra-sre.org/), etc.) - to RE compiled programs.
 - SMT Solver ([z3](https://github.com/Z3Prover/z3)) - to solve equations given some constraints.
 - etc.
@@ -66,14 +66,14 @@ $ gdb ./rev
 ```
 ```
 ...
-0x080485b4 <+94>:	call   0x8048420 <__isoc99_scanf@plt> 	<- ask for input
+0x080485b4 <+94>:	call   0x8048420 <__isoc99_scanf@plt>   <- ask for input
 0x080485b9 <+99>:	add    esp,0x10
 0x080485bc <+102>:	sub    esp,0x8
 0x080485bf <+105>:	lea    eax,[ebp-0x2c]
 0x080485c2 <+108>:	push   eax
 0x080485c3 <+109>:	lea    eax,[ebx-0x1931]
-0x080485c9 <+115>:	push   eax 								<- compare to this string
-0x080485ca <+116>:	call   0x80483e0 <strcmp@plt> 			<- string comparison
+0x080485c9 <+115>:	push   eax 								            <- compare to this string
+0x080485ca <+116>:	call   0x80483e0 <strcmp@plt> 			  <- string comparison
 ...
 ```
 Here we can see the addresses (e.g. 0x080485bc) and instructions (e.g. push eax). This is the logic contained within the program. From our observation, we know that the program asks for an input, compares it to something, if the comparation succeeds, we get the flag. We can set a breakpoint before the `strcmp`	call and examine the call arguments stored in `eax` to know what our input is compared to, that is, the password.
@@ -81,7 +81,7 @@ Here we can see the addresses (e.g. 0x080485bc) and instructions (e.g. push eax)
 (gdb) break *0x080485ca
 (gdb) run
 ...
-(gdb) x/s $eax 			 <- eXamine the content of eax in String form
+(gdb) x/s $eax 			 <- examine the content of eax in string form
 ```
 ```
 0x80486cf:	"verygood"
