@@ -45,9 +45,9 @@ UWVS
 [^_]
 password:
 %31s
-verygood 						          <- the password (?)
+verygood                        <- the password (?)
 ;*2$"
-CTFGUIDE{th1s_1s_r3v3rs1ing} 	<- the flag
+CTFGUIDE{th1s_1s_r3v3rs1ing}    <- the flag
 That is not the password.
 GCC: (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
 crtstuff.c
