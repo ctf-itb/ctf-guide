@@ -45,7 +45,7 @@ UWVS
 [^_]
 password:
 %31s
-verygood 						<- the password (?)
+verygood 						          <- the password (?)
 ;*2$"
 CTFGUIDE{th1s_1s_r3v3rs1ing} 	<- the flag
 That is not the password.
