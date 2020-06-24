@@ -23,7 +23,7 @@ $ file rev
 rev: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-, for GNU/Linux 3.2.0, BuildID[sha1]=6fb9627cbc013322d1595310acf40068382012a4, not stripped
 ```
 
-We know that it is an ELF executable, usually produced from a compiled C program.
+We know that it is an 32-bit ELF executable, usually produced from a compiled C program.
 
 Next, we try to run the program:
 ```
@@ -57,30 +57,69 @@ By running the strings command we can see that output is somewhat large, most of
 
 *Note that this method won't work when the flag is encrypted.*
 
-### Solve #3 - gdb
+### Solve #2 - gdb
 
 This method uses gdb, a debugging tool, and requires a basic understanding of assembly.
 ```
 $ gdb ./rev
-$ disas main
+(gdb) disas main
 ```
 ```
 ...
-0x080485b4 <+94>:	call   0x8048420 <__isoc99_scanf@plt> 		<- scanf = input
+0x080485b4 <+94>:	call   0x8048420 <__isoc99_scanf@plt> 	<- ask for input
 0x080485b9 <+99>:	add    esp,0x10
 0x080485bc <+102>:	sub    esp,0x8
-0x080485bf <+105>:	lea    eax,[ebx-0x1931]
-0x080485c5 <+111>:	push   eax
-0x080485c6 <+112>:	lea    eax,[ebp-0x2c]
-0x080485c9 <+115>:	push   eax
-0x080485ca <+116>:	call   0x80483e0 <strcmp@plt> 				<- strcmp = compares the input to something
+0x080485bf <+105>:	lea    eax,[ebp-0x2c]
+0x080485c2 <+108>:	push   eax
+0x080485c3 <+109>:	lea    eax,[ebx-0x1931]
+0x080485c9 <+115>:	push   eax 								<- compare to this string
+0x080485ca <+116>:	call   0x80483e0 <strcmp@plt> 			<- string comparison
 ...
 ```
-Here we can see the addresses (e.g. 0x080485bc) and instructions (e.g. push eax). This is the logic contained within the program. From our observation, we know that the program asks for an input, compares it to something, if the comparation succeeds, we get the flag. We can set a breakpoint before the `strcmp`	call to know what our input is compared to, that is, the password.
+Here we can see the addresses (e.g. 0x080485bc) and instructions (e.g. push eax). This is the logic contained within the program. From our observation, we know that the program asks for an input, compares it to something, if the comparation succeeds, we get the flag. We can set a breakpoint before the `strcmp`	call and examine the call arguments stored in `eax` to know what our input is compared to, that is, the password.
 ```
-$ break *0x080485ca
-$ run
+(gdb) break *0x080485ca
+(gdb) run
+...
+(gdb) x/s $eax 			 <- eXamine the content of eax in String form
 ```
+```
+0x80486cf:	"verygood"
+```
+We now know that `verygood` is the password. Now just run the program again and input the password and we get the flag.
+
+### Solve #3 - IDA
+
+This method uses IDA, a disassembler which will convert the low-level assembly instructions to higher-level C code. We will be able to understand the program better.
+
+Launch IDA, load the program, and disassemble the main function (F5).
+```
+  ...
+  puts("password:");
+  __isoc99_scanf("%31s", &s2, v4, v5, v6, v7, v8, *(_DWORD *)&s2, v10, v11, v12, v13);
+  if ( !strcmp("verygood", &s2) )
+    puts(flag);
+  else
+    puts(bad);
+  return 0;
+}
+```
+Here, we can easily see that our input (s2) will be compared to `verygood`, which is the password.
+
+We can also directly see the flag.
+```
+...
+.data:0804A02C                 public flag
+.data:0804A02C flag            db 'CTFGUIDE{th1s_1s_r3v3rs1ing}',0 					<- flag
+.data:0804A02C                                         ; DATA XREF: main+83↑o
+.data:0804A049                 align 4
+.data:0804A04C                 public bad
+.data:0804A04C bad             db 'That is not the password.',0
+...
+```
+
+To confirm, just run the program again, input the password and we get the flag.
+
 
 ---
 
