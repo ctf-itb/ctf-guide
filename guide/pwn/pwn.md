@@ -61,14 +61,14 @@ Seems that the main function calls the `vuln()` function, let's disassemble that
   ...
 
   ...
-  *(_QWORD *)s1 = 0x66697473LL;		    <- s1 = 'stif' (or 0x66697473LL in hex)
+  *(_QWORD *)s1 = 0x66697473LL;       <- s1 = 'stif' (or 0x66697473LL in hex)
   printf("your input: ");
-  gets(&v1); 							            <- our input!!!
+  gets(&v1);                          <- our input!!!
   printf("string is: %s\n", s1);
-  if ( !strcmp(s1, "h3h3") )			    <- compare s1 to h3h3
+  if ( !strcmp(s1, "h3h3") )          <- compare s1 to h3h3
   {
     puts("congrats! here's your flag");
-    readFlag(); 						          <- this function reads the flag
+    readFlag();                       <- this function reads the flag
   }
   ...
 }
