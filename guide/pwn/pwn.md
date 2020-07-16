@@ -95,7 +95,7 @@ So, to change `s1` to `'h3h3'`, we need to input any 8 characters (from rbp-0x18
  -18 -17 -16 -15 -14 -13 -12 -11 -10 -0f -0e -0d -0c -0b -0a -09
   |____________v1_____________|   |_____________s1____________|
 ```
-
+### Solve
 Now try inputing the payload to the program locally.
 ```
 $ ./bof
