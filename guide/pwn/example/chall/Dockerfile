@@ -11,7 +11,7 @@ COPY bof0 /home/guide/chall
 COPY flag.txt /home/guide/chall
 COPY run.sh /home/guide/chall
 
-EXPOSE 10099
+EXPOSE 10001
 
 RUN chown -R root:root /home/guide/chall
 RUN chmod -R 555 /home/guide/chall
