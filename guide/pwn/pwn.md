@@ -39,7 +39,7 @@ $ ./bof
 hi! change the string variable to h3h3 and you'll get your flag!
 your input: 
 ```
-The program asks for an input, if our input changes the local variable from 'stif' to 'h3h3', we get the flag.
+The program asks for an input, if our input changes the local variable from `'stif'` to `'h3h3'`, we get the flag.
 
 To understand the program better, let's open it up in IDA (or gdb if you are hardcore).
 
@@ -74,7 +74,7 @@ Seems that the main function calls the `vuln()` function, let's disassemble that
 }
 ```
 
-From that disassembled code, we know that the program asks for our input **USING `gets()`**, store it in v1, and then compares s1 (which is not our input) to "h3h3".
+From that disassembled code, we know that the program asks for our input **USING `gets()`**, store it in `v1`, and then compares `s1` (which is not our input) to `'h3h3'`.
 
 At first this may seem impossible, how can we change a pre-initialized variable given our control to another variable. The key is on how the program asks for our input, using `gets()`. The function `gets()` is an unsafe function that **DOESN'T LIMIT THE CHARACTER ENTERED**, this means that we can bypass the initially allocated space for our input. You can see how `v1` and `s1` are allocated on the header of the disassembled function in IDA.
 
@@ -87,7 +87,7 @@ Here is an illustration on how the variables `v1` and `s1` are allocated (in ref
   |____________v1_____________|   |_____________s1____________|
 ```
 
-So, to change `s1` to 'h3h3', we need to input any 8 characters (from rbp-0x18 to rbp-0x11) plus 'h3h3' itself. The following illustration pictures the input 'GANTENGZh3h3'.
+So, to change `s1` to `'h3h3'`, we need to input any 8 characters (from rbp-0x18 to rbp-0x11) plus `'h3h3'` itself. The following illustration pictures the input `'GANTENGZh3h3'`.
 ```
 +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
 | G | A | N | T | E | N | G | Z | h | 3 | h | 3 |   |   |   |   | -> rbp
