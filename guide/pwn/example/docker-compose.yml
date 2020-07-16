@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  chall:
+    build: ./chall
+    restart: always
+    ports:
+      - 10001:10099
