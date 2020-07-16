@@ -16,7 +16,7 @@ cd chall
 ```
 
 ## Description
-Simple Buffer Overflow:
+Simple Buffer Overflow
 ```
 nc localhost 10001
 ```
