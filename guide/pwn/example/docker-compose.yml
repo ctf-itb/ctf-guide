@@ -5,4 +5,4 @@ services:
     build: ./chall
     restart: always
     ports:
-      - 10001:10099
+      - 10001:10001
