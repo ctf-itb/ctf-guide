@@ -19,6 +19,7 @@ Notice that in the **real** CTF, the contestants are **not given any files**, ju
 ### Observation
 
 First off, try connecting to the *remote* server:
+
 ![ss1](./ss/ss1.png "Screenshot 1")
 
 Seems that the web wants us to log in without any credentials given to us.
@@ -48,6 +49,7 @@ We can input the username like this. Note that `'` is to close out the string (i
 ```
 anything' OR 1=1 -- 
 ```
+
 ![ss2](./ss/ss2.png "Screenshot 2")
 
 
@@ -60,6 +62,7 @@ SELECT * FROM users WHERE username='anything' OR 1=1 -- ' AND password='any_pass
 ```
 
 Use that as a username and anything as the password (does not matter since it will be commented out anyways), and we'll get our login, and our flag!
+
 ![ss3](./ss/ss3.png "Screenshot 3")
 
 ---
