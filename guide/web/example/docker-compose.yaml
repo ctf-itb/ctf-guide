@@ -1,0 +1,13 @@
+version: "3"
+services:
+    db:
+        build: ./db
+        ports: 
+          - "9906:3306"
+    web:
+        build: ./web0
+        ports: 
+          - "8000:80"
+        links:
+          - db
+        restart: always
