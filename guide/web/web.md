@@ -72,8 +72,3 @@ SELECT * FROM users WHERE username='anything' OR 1=1 -- ' AND password='any_pass
 Use that as a username and anything as the password (does not matter since it will be commented out anyways), and we'll get our login, and our flag!
 
 ![ss3](./ss/ss3.png "Screenshot 3")
-
----
-
-## External Resources
-*TBD*
