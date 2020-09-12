@@ -47,4 +47,4 @@ Before you start doing CTFs, it is **highly recommended** to learn and use UNIX-
 
 ## What's Next
 
-Most competitions require experience, and what better way to earn some other than joining the competitions themselves. But joining a competition right away might be too hard. This guide and some other [resources](#External-Resources) may help. CTF competitions are regularly posted in [CTFTime](https://ctftime.org/). After every CTF competitions, people usually post their writeups too. We encourage you to try joining these competitions and reading other people's writeups.
+Most competitions require experience, and what better way to earn some other than joining the competitions themselves. But joining a competition right away might be too hard. This guide and some other resources may help. CTF competitions are regularly posted in [CTFTime](https://ctftime.org/). After every CTF competitions, people usually post their writeups too. We encourage you to try joining these competitions and reading other people's writeups.
