@@ -1,6 +1,14 @@
 # Reverse Engineering
 Reverse Engineering (RE) problems in CTF are usually designed in such a way which forces the constestants to understand what a program does. The flag of RE problems are usually found when the contestants has found the correct input to the given program. One example of a RE problem might be finding a serial code that is acceptable to the program given.
 
+## Table of Contents
+- [Introduction](../introduction.md)
+- [Web Exploitation](../web/web.md)
+- [Digital Forensics](../foren/foren.md)
+- [Cryptography](../crypto/crypto.md)
+- [Binary Exploitation](../pwn/pwn.md)
+- **[Reverse Engineering](../rev/rev.md)**
+
 ## Tools
 The tools you might need to solve RE problems:
 - Debugger ([gdb](http://www.gdbtutorial.com/tutorial/how-install-gdb), [gdb-peda](https://github.com/longld/peda)) - to RE compiled programs.
@@ -119,9 +127,3 @@ We can also directly see the flag.
 ```
 
 To confirm, just run the program again, input the password and we get the flag.
-
-
----
-
-## External Resources
-*TBD*
