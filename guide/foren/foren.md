@@ -3,7 +3,7 @@ Forensics challenges can include file format analysis, steganography, memory dum
 
 ## Table of Contents
 - [Introduction](../introduction.md)
-- [Web Exploitation](../web/web.md)**
+- [Web Exploitation](../web/web.md)
 - **[Digital Forensics](../foren/foren.md)**
 - [Cryptography](../crypto/crypto.md)
 - [Binary Exploitation](../pwn/pwn.md)
