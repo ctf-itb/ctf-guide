@@ -1,6 +1,14 @@
 # Forensics
 Forensics challenges can include file format analysis, steganography, memory dump analysis, or network packet capture analysis. Forensics challenges can also consist of binary data and cryptography (XOR and hex). Some of the challenges require a lot of guessing and some of them require a lot of basic knowledges, especially scripting.
 
+## Table of Contents
+- [Introduction](../introduction.md)
+- [Web Exploitation](../web/web.md)**
+- **[Digital Forensics](../foren/foren.md)**
+- [Cryptography](../crypto/crypto.md)
+- [Binary Exploitation](../pwn/pwn.md)
+- [Reverse Engineering](../rev/rev.md)
+
 ## Tools
 The tools you might need to solve Forensics challenges:
 - File format analysis tools: pngcheck, binwalk, fsck, exiftool and much more.
@@ -42,6 +50,3 @@ Output:
 	wrote extracted data to "flag.txt".
 	CTFGUIDE{th1s_1s_f0r3ns1cks}
 `
-
-## External Resources
-*TBD*
