@@ -11,7 +11,7 @@ Cryptography challenges mainly deals with the process of encrypting and decrypti
 
 ## Tools
 The tools you might need to solve cryptography challenges:
-- Python modules ([PyCryptodome](https://pycryptodome.readthedocs.io/en/latest/src/introduction.html), [gmpy2](https://gmpy2.readthedocs.io/en/latest/intro.html), [pwntools](http://docs.pwntools.com/en/stable/), etc), you know it's python dude.
+- Python modules ([PyCryptodome](https://pycryptodome.readthedocs.io/en/latest/src/introduction.html), [gmpy2](https://gmpy2.readthedocs.io/en/latest/intro.html), [pwntools](http://docs.pwntools.com/en/stable/), etc)
 - Mathematics software system ([SageMath](https://www.sagemath.org/)) to solve mathematical problems using brain or (with some luck) brawn.
 - Online tools to factorize some number ([factordb](http://factordb.com/), [alpetron](https://www.alpertron.com.ar/ECM.HTM), etc), general crypto solver ([cryptii](https://cryptii.com/), [dcode](https://www.dcode.fr/), etc), or else ([wolframalpha](https://www.wolframalpha.com/)).
 - Another tools, such as [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool), [xortool](https://github.com/hellman/xortool), etc.
@@ -27,9 +27,10 @@ From the challenge, we got `n`, `e`, and `c`. It is a typical RSA challenge (the
 First of all, you must know the algorithm used in RSA. Read it [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation) or somewhere else.
 
 Knowing the algorithm, let's try to factor the `n` number in [factordb](http://factordb.com/). Well, we got 2 number, let's call it `p` and `q`.
-
+```
 p = 33372027594978156556226010605355114227940760344767554666784520987023841729210037080257448673296881877565718986258036932062711
 q = 64135289477071580278790190170577389084825014742943447208116859632024532344630238623598752668347708737661925585694639798853367
+```
 
 Next, calculate `phi`.
 
