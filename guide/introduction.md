@@ -35,7 +35,7 @@ Challenges given in a CTF competition usually fall into these main 6 categories:
 - Cryptography
 - Miscellaneous
 
-Each subcategory will be explained in more detail in their own pages.
+Introductions and simple problems on each category will be explained in more detail in their own pages.
 
 ### Writeups
 
