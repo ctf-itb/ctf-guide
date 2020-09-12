@@ -27,7 +27,7 @@ CTFGUIDE{th1s_1s_4_fl4g}
 
 ### Subcategories in CTF
 
-Challenges given in a CTF competition usually fall into these main 6 categories:
+Challenges given in a CTF competition usually fall into these 6 main categories:
 - Web Exploitation
 - Binary Exploitation / Pwning
 - Reverse Engineering
