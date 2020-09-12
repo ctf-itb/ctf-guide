@@ -1,6 +1,14 @@
 # Binary Exploitation / Pwn
 Binary Exploitation or *Pwn* are problems on which the contestants are challenged to *hack* a program. One main thing to notice is that in this type of problems, the contestants are  given a connection to the remote challenge server, so **the flag is not on the program itself** but somewhere in the remote server. The usual way of solving binary exploitation problems is to hack and debug the program on your local machine first (may involve writing a fake flag), writing a script to do the same thing to the remote server, then executing the script. Pwn problems are mostly binary (ELF/Compiled C) program exploitation. Typical vulnerabilities in these programs include buffer overflow, format string attack, integer overflow, heap exploitation and more.
 
+## Table of Contents
+- [Introduction](../introduction.md)
+- [Web Exploitation](../web/web.md)
+- [Digital Forensics](../foren/foren.md)
+- [Cryptography](../crypto/crypto.md)
+- **[Binary Exploitation](../pwn/pwn.md)**
+- [Reverse Engineering](../rev/rev.md)
+
 ## Tools
 The tools you might need to solve Pwn problems:
 - Debugger ([gdb](http://www.gdbtutorial.com/tutorial/how-install-gdb), [gdb-peda](https://github.com/longld/peda)) - to RE compiled programs.
@@ -118,8 +126,3 @@ your input: GANTENGZh3h3
 congrats! here's your flag
 CTFGUIDE{3z_b0o00ooo0ff}
 ```
-
----
-
-## External Resources
-*TBD*
