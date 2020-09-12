@@ -1,6 +1,14 @@
 # Web Exploitation
 On web exploitation challenges, the contestants are usually given an address to a vulnerable web application on which they can try to exploit those vulnerabilities to obtain the flags. The locations of the flags on web exploitation challenges may vary according to the web's vulnerability. One challenge may require the leakage of database via unsanitized SQL queries, another may require full control of the host/server system. Typical web vulnerabilities include SQL Injection (SQLI), Local File Inclusion (LFI), Cross-Site Scripting (XSS), Server-Side Template Injection (SSTI), and Remote Code Execution (RCE).
 
+## Table of Contents
+- [Introduction](./introduction.md)
+- **[Web Exploitation](./web/web.md)**
+- [Digital Forensics](./foren/foren.md)
+- [Cryptography](./crypto/crypto.md)
+- [Binary Exploitation](./pwn/pwn.md)
+- [Reverse Engineering](./rev/rev.md)
+
 ## Tools
 The tools you might need to solve Web problems:
 - [Burp Suite](https://portswigger.net/burp) - to intercept, examine, and repeat requests.
