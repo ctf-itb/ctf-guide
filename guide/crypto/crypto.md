@@ -48,6 +48,3 @@ At last, we can calculate the plaintext and convert it to string.
 `flag = lb(pow(c, d, n))`
 
 The flag is: `CTFGUIDE{iT5_r3alLy_5iCk_Al6or1tHm}`
-
-## External Resources
-*TBD*
