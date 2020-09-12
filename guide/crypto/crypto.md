@@ -1,6 +1,14 @@
 # Cryptography
 Cryptography challenges mainly deals with the process of encrypting and decrypting data using some algorithms. The challenges include classical cryptography (such as Caesar Cipher) and modern cryptography (such as AES and RSA). To solve the challenges, the contestants need to find and exploit the vulnerabilities of the used algorithm. In many cases, deep understanding in mathematics and scripting ability is required to solve the challenges efficiently.
 
+## Table of Contents
+- [Introduction](../introduction.md)
+- [Web Exploitation](../web/web.md)
+- [Digital Forensics](../foren/foren.md)
+- **[Cryptography](../crypto/crypto.md)**
+- [Binary Exploitation](../pwn/pwn.md)
+- [Reverse Engineering](../rev/rev.md)
+
 ## Tools
 The tools you might need to solve cryptography challenges:
 - Python modules ([PyCryptodome](https://pycryptodome.readthedocs.io/en/latest/src/introduction.html), [gmpy2](https://gmpy2.readthedocs.io/en/latest/intro.html), [pwntools](http://docs.pwntools.com/en/stable/), etc), you know it's python dude.
