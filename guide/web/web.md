@@ -21,7 +21,7 @@ You can find the files [here](./example/README.md).
 
 Follow the instruction to setup the challenge server.
 
-Notice that in the **real** CTF, the contestants are **not given any files**, just the address of the web to connect to.
+Notice that in the **real** CTF, the contestants are usually **not given any files**, just the address of the web to connect to.
 
 ## How to Solve
 ### Observation
