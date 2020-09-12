@@ -4,7 +4,12 @@ This is a guide on how to start CTF, covering the basics on how to solve the pro
 
 
 ## Table of Contents
-*TBD*
+- **[Introduction](./introduction.md)**
+- [Web Exploitation](./web/web.md)
+- [Digital Forensics](./foren/foren.md)
+- [Cryptography](./crypto/crypto.md)
+- [Binary Exploitation](./pwn/pwn.md)
+- [Reverse Engineering](./rev/rev.md)
 
 
 ## WTF is CTF?
@@ -20,16 +25,13 @@ Flags in CTF are usually (but not always) a text of [leetspeak](https://en.wikip
 CTFGUIDE{th1s_1s_4_fl4g}
 ```
 
-Now try to find a flag hidden in this page.
-<!--- You can't see me! The flag is CTFGUIDE{gr4tz_y0u_f0unD_m3} -->
-
 ### Subcategories in CTF
 
 Challenges given in a CTF competition usually fall into these main 6 categories:
 - Web Exploitation
 - Binary Exploitation / Pwning
 - Reverse Engineering
-- Forensics
+- Digital Forensics
 - Cryptography
 - Miscellaneous
 
@@ -46,8 +48,3 @@ Before you start doing CTFs, it is **highly recommended** to learn and use UNIX-
 ## What's Next
 
 Most competitions require experience, and what better way to earn some other than joining the competitions themselves. But joining a competition right away might be too hard. This guide and some other [resources](#External-Resources) may help. CTF competitions are regularly posted in [CTFTime](https://ctftime.org/). After every CTF competitions, people usually post their writeups too. We encourage you to try joining these competitions and reading other people's writeups.
-
----
-
-## External Resources
-*TBD*
